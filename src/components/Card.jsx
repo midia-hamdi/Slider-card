@@ -2,6 +2,7 @@ import React from 'react'
 import Cardimage from './Cardimage'
 import CardItem from './CardItem'
 import UnitStates from './UnitStates'
+import Buy from './Buy'
 
 export default function Card({hero}) {
   return (
@@ -11,6 +12,7 @@ export default function Card({hero}) {
             <CardItem type='clash-card__level clash-card__level--barbarian'> {hero.level} </CardItem>
             <CardItem type='clash-card__unit-name'>The {hero.name} </CardItem>
             <CardItem type='clash-card__unit-description'> {hero.description} </CardItem>
+            <Buy name={hero.name}/>
             <UnitStates units={hero.units} name={hero.name} />
         </div> 
         
