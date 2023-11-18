@@ -5,7 +5,8 @@ export default function Count() {
 
     function increment(){
         setTimeout(() => {
-            setcount(count + 1)
+            setcount(preveCount => preveCount + 1);
+            console.log(count)
         }, 2000)
     }
 
