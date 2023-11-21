@@ -5,8 +5,13 @@ import Count from './Count'
 export default function Buy({name}) {
     return (
         <div className='buy-wrapper'>
-            <Count />
             <BuyBtn name={name}/>
+            <div>
+                <div>
+                    Max: 1000
+                </div>
+            <Count />
+            </div>
         </div>
     )
 }
